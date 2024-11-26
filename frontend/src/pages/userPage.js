@@ -21,7 +21,7 @@ function UserPage() {
         }
   
         // Fetch user data
-        const response = await fetch('/api/me', {
+        const response = await fetch('https://blog-website-8gw4.vercel.app/api/me', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`
