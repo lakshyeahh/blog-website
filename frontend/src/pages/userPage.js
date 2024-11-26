@@ -37,7 +37,7 @@ function UserPage() {
         setUserData(userData);
   
         // Fetch user posts
-        const postsResponse = await fetch(`/api/posts/user/${userData._id}`, {
+        const postsResponse = await fetch(`https://blog-website-8gw4.vercel.app/api/posts/user/${userData._id}`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`
